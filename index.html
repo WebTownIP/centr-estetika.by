@@ -74,17 +74,6 @@
           <li class="selected" data-background="./assets/images/slides/slide0.jpg"></li>
           <li class="selected" data-background="./assets/images/slides/slide1.jpg"></li>
         </ul>
-
-        <footer class="cd-slider-nav">
-          <nav>
-            <span class="cd-marker item-1"></span>
-            
-            <ul class="list-unstyled">
-              <li class="selected"><a href=""></a></li>
-              <li><a href=""></a></li>
-            </ul>
-          </nav> 
-        </footer>
       </section>
 
       <section id="about-us">
@@ -383,7 +372,7 @@
         <div class="row align-items-top">
           <div class="col-sm-6 col-lg-3">
             <div class="contacts">
-              <div>г.Гомель, ул. Киселева 3</div>
+              <div>г.Гомель, ул. Киселева 3а</div>
               <div>Режим работы:</div>
               <div>9:00 - 21:00</div>
               <div>без выходных</div>
@@ -576,7 +565,7 @@
     <script>
       ymaps.ready(function () {
         var myMap = new ymaps.Map('map', {
-                center: [52.42635707181459, 30.9926855],
+                center: [52.42873136661799,30.991965728632575],
                 zoom: 16
         });
 
@@ -586,7 +575,7 @@
 
         var myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
             balloonContentHeader: '"Учебный центр "Золотая река плюс"',
-            balloonContentBody: "г.Гомель, ул. Киселева 3",
+            balloonContentBody: "г.Гомель, ул. Киселева 3а",
             preset: 'twirl#greyIcon'
         }, {
           hideIconOnBalloonOpen: false
