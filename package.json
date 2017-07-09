@@ -1,0 +1,17 @@
+{
+  "name": "estetika",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "nikita.sedyx.94@gmail.com",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "4.0.0-alpha.6",
+    "font-awesome": "4.7.0",
+    "owl.carousel": "2.2.0",
+    "slick-carousel": "^1.6.0"
+  }
+}
