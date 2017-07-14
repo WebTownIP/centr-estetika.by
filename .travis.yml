@@ -1,7 +1,7 @@
 dist: trusty
 addons:
   ssh_known_hosts:
-  - 185.65.137.105
+  - 185.65.137.105:2200
 
 language: node_js
 node_js:
