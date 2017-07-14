@@ -10,7 +10,10 @@ before_script:
   - npm install
 script: npm test
 after_success:
+  - cd /home/travis/build/WebTownIP/centr-estetika.by
+  - ls
   - ssh 185.65.137.105 -p 2200 -l root
+  - yes
 
 notifications:
   email:
