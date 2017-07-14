@@ -9,6 +9,8 @@ before_script:
   - npm install -g npm@5.2.0
   - npm install
 script: npm test
+after_success:
+  - ssh 185.65.137.105 -p 2200 -l root
 
 notifications:
   email:
