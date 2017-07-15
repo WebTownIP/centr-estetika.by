@@ -23,7 +23,7 @@ script:
   - npm run deploy
 
 after_success:
-  - wput /home/travis/build/WebTownIP/centr-estetika.by/dist ftp://$FTP_USER:$FTP_PASSWORD@$FTP_HOST/centr-estetika.by -u
+  - wput /home/travis/build/WebTownIP/centr-estetika.by/dist ftp://$FTP_USER:$FTP_PASSWORD@$FTP_HOST/centr-estetika.by/ -u
 
 notifications:
   email:
