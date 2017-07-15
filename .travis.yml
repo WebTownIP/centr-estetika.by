@@ -15,10 +15,7 @@ before_script:
   - npm install
 script: npm test
 after_success:
-  - cd /home/travis/build/WebTownIP/centr-estetika.by
-  - ls
-  - zip dist.zip /home/travis/build/WebTownIP/centr-estetika.by
-  - ls
+  - zip -r centr-estetika.by.zip /home/travis/build/WebTownIP/centr-estetika.by
 
 notifications:
   email:
