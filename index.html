@@ -4,13 +4,17 @@
     <title>Эстетика - учебный центр | Обучение косметологии в Гомеле</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- build:css-lib -->
     <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="./node_modules/owl.carousel/dist/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="./node_modules/owl.carousel/dist/assets/owl.theme.default.min.css">
     <link rel="stylesheet" href="./node_modules/font-awesome/css/font-awesome.min.css">
+    <!-- endbuild -->
 
     <link rel="icon" href="./assets/favicon.png" type="image/x-icon">
-    <link rel="stylesheet" href="./assets/css/index.css">
+    <!-- build:css -->
+    <link rel="stylesheet" href="./assets/css/index.css" data-ignore="true">
+    <!-- endbuild -->
   </head>
 
   <body>
@@ -514,12 +518,15 @@
       </div>
     </div>
 
+    <!-- build:js-lib -->
     <script src="./node_modules/jquery/dist/jquery.min.js"></script>
-    <script src="./assets/js/hero-slider/js/main.js"></script>
     <script src="./node_modules/tether/dist/js/tether.min.js"></script>
     <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="./node_modules/owl.carousel/dist/owl.carousel.min.js"></script>
-    <script>
+    <script src="./vendor/hero-slider/js/main.js"></script>
+    <!-- endbuild -->
+
+    <script data-ignore=true>
       $('.nav-link').click(function(e) {
         e.preventDefault();
         history.pushState(null, null, e.target.hash);
@@ -561,8 +568,8 @@
       });
     </script>
 
-    <script src="//api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
-    <script>
+    <script src="//api-maps.yandex.ru/2.1/?lang=ru_RU" data-ignore=true></script>
+    <script data-ignore=true>
       ymaps.ready(function () {
         var myMap = new ymaps.Map('map', {
                 center: [52.42873136661799,30.991965728632575],
