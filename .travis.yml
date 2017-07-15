@@ -23,7 +23,7 @@ script:
   - npm run deploy
 after_success:
   - echo $FTP_HOST
-  - find /home/travis/build/WebTownIP/centr-estetika.by/dist -type f -exec echo $FTP_HOST/{} \;
+  - find /home/travis/build/WebTownIP/centr-estetika.by/dist -type f -exec echo $FTP_HOST\{} \;
 
 notifications:
   email:
