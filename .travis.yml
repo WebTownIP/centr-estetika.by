@@ -1,7 +1,5 @@
 dist: trusty
-addons:
-  ssh_known_hosts:
-  - 185.65.137.105:2200
+
 env:
   global:
     - secure: "y2ues1utJkn++o7i98nmr6TiHx+G2zHtURiSTP0h37Y9/BnTf421AAVY/D2FpHs1RTIzA5NVj5tCFLTZI5nJQFOhE7LXAssI6t1GZm6mP+8pPq5XvOM8HzdcvFA3pI+Wr8iXfIaa0Txw/XoMU+smkY6QJGy1r2Qa8qW2TXsUjACvbYZjumXJsJFQpFINFkACnbR8yntdwk6/RNfClvLII7A59rgWiGg6ucTKfPQnt9wZ5i4Itm7qQIk61RfErHgL4wjzFsWRBQlEmR0WTIbQYLanHP0Kz/Xpr0rQwdI1lURkIvgpYdWew211OteiPGm3DLwj1YSAqWkkEt19sR1hR+MzpFbxy82xe/UxF05706C5Zfh8hlCKo2w9pXNzR8dJXCNvI+/iqQM5axFdJ0STr8ZjPIEP3l5vTH6OLVSku6SU5LEJ1TT/ILKdlLrqORkfyzrpABZuPgaA2wsznPlhFi6TYOrSkXxhKu0nJ85IqTCiWOfZ45p2+3s0y36ioSett3+5XYpdBnWUDascGEI0raxeiA5jzAKTHTbP0xiBmq7GKeUdrjyUMbTZFC44dQOtR16BUsJcZ6YuymMBG+A+Z/lrpb2Zdlw1T3nWaN1Qv2CYaXiH4Vtvv+V5uhvsrHy/OTDxGej3DRc4/aONyavyuSw/apViPt73qVC/6rcXNbY="
@@ -11,6 +9,7 @@ env:
 language: node_js
 node_js:
   - "8.1.4"
+
 cache:
   directories:
     - "node_modules"
