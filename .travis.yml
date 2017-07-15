@@ -19,9 +19,7 @@ before_script:
   - npm install
 script: npm test
 after_success:
-  - ls -a
-  - zip -r centr-estetika.by.zip /home/travis/build/WebTownIP/centr-estetika.by
-  - find /home/travis/build/WebTownIP/centr-estetika.by -type f -exec curl -u $FTP_USER:$FTP_PASSWORD --ftp-create-dirs -T {} $FTP_HOST/{}
+  - find /home/travis/build/WebTownIP/centr-estetika.by -type f -exec curl -u $FTP_USER:$FTP_PASSWORD --ftp-create-dirs -T {} $FTP_HOST/{} \;
 
 notifications:
   email:
