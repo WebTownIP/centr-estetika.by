@@ -410,3 +410,28 @@ body > footer {
 .no-touch .cd-slider-nav a:hover {
   background-color: rgba(0, 1, 1, 0.5);
 }
+
+#back-to-top {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  z-index: 9999;
+  width: 32px;
+  height: 32px;
+  text-align: center;
+  line-height: 30px;
+  background: #1d5f8e;
+  color: #fff;
+  cursor: pointer;
+  border: 0;
+  border-radius: 2px;
+  text-decoration: none;
+  transition: opacity 0.2s ease-out;
+  display: none
+}
+#back-to-top:hover {
+    background: #27638e;
+}
+#back-to-top.show {
+    display: block;
+}
