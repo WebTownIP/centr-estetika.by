@@ -195,6 +195,13 @@ body > footer {
       text-decoration: underline;
     }
 
+      #services .service .sub-title.long {
+        min-height: 110px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+
     #services .service .description {
       font-size: 1.3rem;
       text-align: center;
