@@ -4,6 +4,13 @@
   font-weight: 400;
 }
 
+@font-face {
+  font-family: GoodVibesPro;
+  src: url(../fonts/GoodVibesPro.ttf);
+  font-weight: 400;
+}
+
+
 .container-fluid {
   max-width: 1500px !important;
   margin: 0 auto;
@@ -284,39 +291,18 @@ body > footer {
     .cd-hero-slider li .content {
       position: absolute;
       width: 750px;
-      top: 30%;
+      bottom: 0%;
+      width: 100%;
+      text-align: center;
       color: #1B1B1B;
       font-style: italic;
-      font-size: 36px;
+      font-size: 45px;
+      font-family: GoodVibesPro, sans-serif;
     }
-
-      .cd-hero-slider li .content.right {
-        right: 0;
-      }
-
-      .cd-hero-slider li .content.left {
-        left: calc((100% - 1500px) / 2);
-      }
 
       .cd-hero-slider li .content p {
         margin: 0;
       }
-
-    @media (max-width: 1500px) {
-      .cd-hero-slider li .content {
-        width: 80%;
-      }
-
-        .cd-hero-slider li .content.left {
-          left: 20px;
-        }
-    }
-
-    @media (max-width: 768px) {
-      .cd-hero-slider li .content {
-        top: 15%;
-      }
-    }
 
       .cd-hero-slider li .content .sub-title {
         color: #F1C843;
