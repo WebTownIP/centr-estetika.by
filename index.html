@@ -731,6 +731,25 @@
       </div>
     </div>
 
+    <div class="modal fade" id="actionModal" tabindex="-1" role="dialog" aria-labelledby="actionModal" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-body">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <h4 class="title">Акция!</h4>
+            <div class="text-center">
+              <h5>Начни учебный год с Нами!</h5>
+              <p>
+                Весь <u>сентябрь</u> скидка на курсы Косметик-Эстет <b>10%</b>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- build:js-lib -->
     <script src="./node_modules/jquery/dist/jquery.min.js"></script>
     <script src="./node_modules/tether/dist/js/tether.min.js"></script>
@@ -740,6 +759,14 @@
     <!-- endbuild -->
 
     <script data-ignore=true>
+      if (!localStorage.getItem('studyYear2017Action')) {
+        var actionModal = $('#actionModal');
+        actionModal.modal();
+        actionModal.on('hide.bs.modal', function() {
+          localStorage.setItem('studyYear2017Action', 'true');
+        });
+      }
+
       if ($('#back-to-top').length) {
         var scrollTrigger = 200, // px
             backToTop = function () {
