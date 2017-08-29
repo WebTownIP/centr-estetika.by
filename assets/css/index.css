@@ -458,3 +458,21 @@ body > footer {
 #back-to-top.show {
     display: block;
 }
+
+.card:not(:last-child) {
+  margin-bottom: 5px;
+}
+
+  .card .card-header {
+    background: #63CBCA;
+    color: #fff;
+  }
+
+    .card .card-header a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+  .card .card-body {
+    padding: 0 5px;
+  }
