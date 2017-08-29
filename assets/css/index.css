@@ -185,15 +185,33 @@ body > footer {
     box-shadow: 0 0 10px 2px #79CDDE;
     border-radius: 5px 5px 0 0;
     background: #fff;
+    cursor: pointer;
+    position: relative;
   }
 
-    #services .service:hover {
+    #services .service:hover, #services .service:hover .info-icon {
       box-shadow: 0 0 10px 2px #4dbbd2;
     }
 
     #services .service img {
       width: 100%;
       border-radius: 5px 5px 0 0;
+    }
+
+    #services .service .info-icon {
+      display: inline-block;
+      color: #79CDDE;
+      position: absolute;
+      right: 15px;
+      top: 10px;
+      box-shadow: 0 0 10px 2px #79CDDE;
+      display: inline-block;
+      width: 30px;
+      height: 30px;
+      border-radius: 100%;
+      background: #fff;
+      text-align: center;
+      line-height: 34px;
     }
 
     #services .service .sub-title {
