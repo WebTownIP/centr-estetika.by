@@ -448,6 +448,10 @@
       <i class="fa fa-arrow-up"></i>
     </a>
 
+    <div id="actions-btn" data-toggle="modal" data-target="#actionsModal">
+      <i class="fa fa-percent fa-lg"></i>
+    </div>
+
     <div class="modal fade" id="theoryDurationModal" tabindex="-1" role="dialog" aria-labelledby="theoryDurationModal" aria-hidden="true">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
@@ -731,7 +735,7 @@
       </div>
     </div>
 
-    <div class="modal fade" id="actionModal" tabindex="-1" role="dialog" aria-labelledby="actionModal" aria-hidden="true">
+    <div class="modal fade" id="actionsModal" tabindex="-1" role="dialog" aria-labelledby="actionsModal" aria-hidden="true">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-body">
@@ -760,9 +764,9 @@
 
     <script data-ignore=true>
       if (!localStorage.getItem('studyYear2017Action')) {
-        var actionModal = $('#actionModal');
-        actionModal.modal();
-        actionModal.on('hide.bs.modal', function() {
+        var actionsModal = $('#actionsModal');
+        actionsModal.modal();
+        actionsModal.on('hide.bs.modal', function() {
           localStorage.setItem('studyYear2017Action', 'true');
         });
       }
