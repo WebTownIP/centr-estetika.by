@@ -5,8 +5,8 @@
 }
 
 @font-face {
-  font-family: GoodVibesPro;
-  src: url(../fonts/GoodVibesPro.ttf);
+  font-family: OldClassic;
+  src: url(../fonts/OldClassic.ttf);
   font-weight: 400;
 }
 
@@ -361,7 +361,7 @@ body > footer {
       color: #1B1B1B;
       font-style: italic;
       font-size: 45px;
-      font-family: GoodVibesPro, sans-serif;
+      font-family: OldClassic, sans-serif;
     }
 
       .cd-hero-slider li .content p {
